@@ -151,9 +151,62 @@ claude mcp add microsoft/playwright-mcp
 
 ---
 
-### 2.3: Metasploit MCP (MEDIUM PRIORITY) 💣
+### 2.3: Chrome MCP (HIGH PRIORITY) 🌐
 
-**Why Third**: Bash handles 80% already (payload generation, one-shot exploits), MCP adds session management
+**Why Third**: Uses your actual Chrome browser with extensions, persistent sessions, anti-bot detection
+
+**Repository**: `github.com/hangwin/mcp-chrome`
+**Stars**: 8.7k ⭐ (Most popular community Chrome MCP)
+**License**: MIT
+
+**Installation**:
+```bash
+# Download extension from GitHub releases
+# Install bridge
+npm install -g mcp-chrome-bridge
+# Load extension in Chrome
+```
+
+**Capabilities**:
+- **Uses your daily Chrome** (existing profile, logins, extensions)
+- Persistent authenticated sessions (no re-login)
+- Cookie Editor, Wappalyzer, JSON Viewer compatibility
+- Network monitoring, bookmarks, screenshots
+- Content analysis, web scraping
+- Fully local, privacy-focused
+
+**Why Better Than Playwright for Security Testing**:
+- Real browser fingerprint (stealth, anti-bot)
+- Keep your extensions (Cookie Editor, etc.)
+- Persistent sessions across tests
+- Faster startup (no new browser instances)
+
+**Tasks**:
+- [ ] Install hangwin/mcp-chrome
+- [ ] Configure Chrome extension
+- [ ] Test with existing Chrome profile
+- [ ] Verify extension compatibility (Cookie Editor, etc.)
+- [ ] Test authenticated session persistence
+- [ ] Configure Burp proxy integration (127.0.0.1:8080)
+- [ ] Document Chrome MCP patterns
+
+**Success Criteria**:
+- Can control existing Chrome with AI
+- Extensions work during automation
+- Sessions persist across tests
+- Traffic proxies through Burp
+
+**Use Cases**:
+- Bug bounty testing with authenticated sessions
+- Using security testing extensions during automation
+- Avoiding bot detection
+- Multi-account testing with persistent logins
+
+---
+
+### 2.4: Metasploit MCP (MEDIUM PRIORITY) 💣
+
+**Why Fourth**: Bash handles 80% already (payload generation, one-shot exploits), MCP adds session management
 
 **Repository**: `github.com/GH05TCREW/MetasploitMCP`
 **Downloads**: 41.2k+
@@ -205,7 +258,7 @@ claude mcp add GH05TCREW/MetasploitMCP
 
 ---
 
-### 2.4: Agent Integration Strategy (HYBRID APPROACH)
+### 2.5: Agent Integration Strategy (HYBRID APPROACH)
 
 **Philosophy**: Best tool for the job - Bash for speed, MCP for capability
 
@@ -214,7 +267,8 @@ claude mcp add GH05TCREW/MetasploitMCP
 User Request → Recon-Specialist Analyzes
 │
 ├─ Needs Meterpreter session management? → Metasploit MCP
-├─ Needs browser automation? → Playwright MCP
+├─ Needs authenticated browser testing with extensions? → Chrome MCP
+├─ Needs clean-state browser automation? → Playwright MCP
 ├─ Needs Burp proxy/scanner integration? → Burp MCP
 └─ Simple command execution? → Bash specialist (faster)
 ```
@@ -310,7 +364,8 @@ User Request → Recon-Specialist Analyzes
 
 ### Phase 2 (MCP Integration) - 🎯 IN PROGRESS
 - [ ] Burp MCP installed and functional
-- [ ] Playwright MCP installed and functional
+- [x] Playwright MCP installed and functional
+- [ ] Chrome MCP (hangwin) installed and functional
 - [ ] Metasploit MCP installed and functional
 - [ ] Hybrid delegation logic implemented
 - [ ] At least 3 example workflows documented
