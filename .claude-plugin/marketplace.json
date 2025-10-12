@@ -1,0 +1,83 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "hackbot-offensive-security",
+  "version": "1.0.0",
+  "description": "Intelligence-driven offensive security plugin for Claude Code with research chain, tool specialists, and exploit development",
+  "owner": {
+    "name": "theedoode",
+    "email": "security@hackbot.dev"
+  },
+  "plugins": [
+    {
+      "name": "hackbot-core",
+      "description": "Core research chain: logical framework, security researcher with chain-of-hypothesis, documentation researcher",
+      "version": "1.0.0",
+      "keywords": ["security", "research", "hypothesis", "intelligence"],
+      "category": "security",
+      "agents": [
+        "./agents/logical-framework.md",
+        "./agents/security-researcher.md",
+        "./agents/documentation-researcher.md"
+      ]
+    },
+    {
+      "name": "hackbot-attack-dev",
+      "description": "Attack development workflow: EthiHaxor dev for modern exploit vectors, recon specialist for targeted enumeration",
+      "version": "1.0.0",
+      "keywords": ["exploitation", "attack-vectors", "recon"],
+      "category": "security",
+      "agents": [
+        "./agents/ethihaxor-dev.md",
+        "./agents/recon-specialist.md"
+      ]
+    },
+    {
+      "name": "hackbot-tool-specialists",
+      "description": "Expert tool specialists: curl, nmap, httpx, nuclei, netcat, metasploit, subfinder, gau, openssl, ffuf",
+      "version": "1.0.0",
+      "keywords": ["tools", "offensive-security", "reconnaissance", "fuzzing"],
+      "category": "security",
+      "agents": [
+        "./agents/tools/curl-specialist.md",
+        "./agents/tools/nmap-specialist.md",
+        "./agents/tools/subdomain-web-specialist.md",
+        "./agents/tools/nuclei-specialist.md",
+        "./agents/tools/netcat-specialist.md",
+        "./agents/tools/metasploit-specialist.md",
+        "./agents/tools/gau-specialist.md",
+        "./agents/tools/openssl-specialist.md",
+        "./agents/tools/ffuf-specialist.md"
+      ]
+    },
+    {
+      "name": "hackbot-poc-research",
+      "description": "POC Parrot agent for pulling working CVE exploits from GitHub",
+      "version": "1.0.0",
+      "keywords": ["cve", "poc", "exploits", "github"],
+      "category": "security",
+      "agents": [
+        "./agents/poc-parrot.md"
+      ]
+    },
+    {
+      "name": "hackbot-commands",
+      "description": "Custom commands: /dox for documenting findings",
+      "version": "1.0.0",
+      "keywords": ["documentation", "findings"],
+      "category": "utilities",
+      "commands": [
+        "./commands/dox.md"
+      ]
+    },
+    {
+      "name": "hackbot-guardrails",
+      "description": "Safety hooks: block echo to prevent fabrication",
+      "version": "1.0.0",
+      "keywords": ["safety", "integrity"],
+      "category": "utilities",
+      "hooks": [
+        "./hooks/block-echo.py"
+      ]
+    }
+  ]
+}
