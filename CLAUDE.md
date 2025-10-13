@@ -143,7 +143,7 @@ This configuration enables intelligent delegation to specialized subagents:
 - **recon-specialist**: Intelligence-driven enumeration coordinator (NOT blind scanning)
 
 ### Tool Specialists
-Context-optimized experts (~200 lines each) for:
+Agent SDK for:
 - curl, nmap, httpx, nuclei, ffuf, netcat, metasploit, subfinder, gau, openssl
 
 ### POC & Utilities
