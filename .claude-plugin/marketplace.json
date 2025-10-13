@@ -5,7 +5,7 @@
   "description": "Intelligence-driven offensive security plugin for Claude Code with research chain, tool specialists, and exploit development",
   "owner": {
     "name": "theedoode",
-    "email": "security@hackbot.dev"
+    "email": "null"
   },
   "plugins": [
     {
