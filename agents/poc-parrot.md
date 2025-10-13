@@ -268,7 +268,7 @@ MODIFICATIONS NEEDED:
 - For TLS services, remove `-plaintext` flag
 
 ARTIFACTS RETRIEVED:
-- /home/theedoode/tools/grpcurl (installed)
+- grpcurl (installed to tools directory)
 
 RETURNING TO: ethihaxor-dev with production-ready gRPC enumeration tool
 ```

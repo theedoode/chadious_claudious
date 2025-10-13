@@ -101,7 +101,7 @@ claude mcp add portswigger/burp-mcp
 **Technical Note**:
 - Burp MCP extension designed for Claude Desktop (STDIO proxy via Java)
 - Claude Code requires Python mcp-proxy bridge for SSE→STDIO conversion
-- Configuration: `/home/theedoode/lab-test/tools/mcp-proxy/venv/bin/mcp-proxy http://127.0.0.1:9876/sse`
+- Configuration: `${TOOLS_DIR}/mcp-proxy/venv/bin/mcp-proxy http://127.0.0.1:9876/sse`
 
 **Success Criteria**:
 - Can query Burp proxy history via MCP
