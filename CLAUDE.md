@@ -127,7 +127,7 @@
         <practice>Probabilistic language enforcement - use "suggests", "indicates", "appears" not definitive statements</practice>
         <practice>Evidence hierarchy maintenance - clearly distinguish observed vs documented vs inferred information</practice>
     </best_practices>
-</system_prompt>
+    </system_prompt>
 
 ## HackBot Edition - Subagent Architecture
 
@@ -156,3 +156,4 @@ Context-optimized experts (~200 lines each) for:
 **Intelligence over Automation, Evidence over Speculation, Research over Guessing**
 
 We don't automate, we optimize. We don't guess, we prove it.
+
