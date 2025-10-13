@@ -1,8 +1,16 @@
-# 🎯 HackBot Edition - Claude Code Offensive Security Plugin
+# 🎯 HackBot Edition - Claude Code Offensive Security Framework
+
+⚠️ **PRIVATE REPOSITORY - AUTHORIZED ACCESS ONLY** ⚠️
 
 **Transform Claude Code into an intelligence-driven offensive security powerhouse.**
 
-HackBot Edition is a comprehensive plugin marketplace for Claude Code that implements chain-of-hypothesis research methodology, specialized tool agents, and modern attack vector development for ethical security research and bug bounty hunting.
+HackBot Edition is a comprehensive offensive security framework for Claude Code implementing chain-of-hypothesis research methodology, specialized tool agents, and modern attack vector development for ethical security research and bug bounty hunting.
+
+**This repository is private for security reasons:**
+- Prevents bad actors from weaponizing advanced AI-driven attack techniques
+- Avoids forcing model providers to implement restrictive mitigations
+- Ensures responsible disclosure practices are maintained
+- Access limited to vetted security researchers with authorization
 
 ## 🚀 Features
 
@@ -38,36 +46,42 @@ Each specialist has deep knowledge of tool flags, best practices, and offensive 
 
 ### Prerequisites
 - Claude Code 1.0.60+ (native subagent support)
-- Active Anthropic Claude subscription (uses Max plan tokens)
+- Active Anthropic Claude Max subscription
+- **Private repository access** (authorized researchers only)
 
-### Install from GitHub
-
-```bash
-# Install entire HackBot Edition
-/plugin marketplace add theedoode/chadius_cladius
-```
-
-### Install Specific Modules
+### Clone Repository
 
 ```bash
-# Core research chain only
-/plugin marketplace add theedoode/chadius_cladius hackbot-core
-
-# Attack development workflow
-/plugin marketplace add theedoode/chadius_cladius hackbot-attack-dev
-
-# Tool specialists
-/plugin marketplace add theedoode/chadius_cladius hackbot-tool-specialists
-
-# POC research
-/plugin marketplace add theedoode/chadius_cladius hackbot-poc-research
-
-# Commands
-/plugin marketplace add theedoode/chadius_cladius hackbot-commands
-
-# Guardrails
-/plugin marketplace add theedoode/chadius_cladius hackbot-guardrails
+# Clone private repository (requires authorized GitHub access)
+git clone https://github.com/theedoode/chadius_cladius.git ~/lab-test/chadius_cladius
+cd ~/lab-test/chadius_cladius
 ```
+
+### Install Plugin Components
+
+HackBot Edition includes 6 modular plugin bundles:
+
+1. **hackbot-core**: Research chain (logical-framework, security-researcher, documentation-researcher)
+2. **hackbot-attack-dev**: Attack development (ethihaxor-dev, recon-specialist)
+3. **hackbot-tool-specialists**: Tool experts (curl, nmap, httpx, nuclei, ffuf, netcat, metasploit, subfinder, gau, openssl)
+4. **hackbot-poc-research**: Exploit research (poc-parrot)
+5. **hackbot-commands**: Custom commands (/dox)
+6. **hackbot-guardrails**: Safety hooks (block-echo)
+
+Agents are available in `agents/` directory for Claude Code subagent system.
+
+### Optional: MCP Server Integration
+
+HackBot Edition supports these MCP servers for enhanced capabilities:
+
+- **Caido MCP**: HTTP proxy integration
+- **Metasploit MCP**: Session management & payload generation
+- **Burp Suite MCP**: Proxy history, scanner, intruder, repeater
+- **Playwright MCP**: Browser automation with Burp proxy integration
+
+**See [docs/MCP-SETUP.md](docs/MCP-SETUP.md) for detailed installation instructions.**
+
+MCP servers are optional dependencies - install only what you need for your workflow.
 
 ## 🎓 Usage
 
