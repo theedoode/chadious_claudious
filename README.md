@@ -1,8 +1,8 @@
-# 🎯 HackBot Edition - Claude Code Offensive Security Framework
+Claude Code Offensive Security Framework
 
-⚠️ **PRIVATE REPOSITORY - AUTHORIZED ACCESS ONLY** ⚠️
+**PRIVATE REPOSITORY ** 
 
-**Transform Claude Code into an intelligence-driven offensive security powerhouse.**
+
 
 HackBot Edition is a comprehensive offensive security framework for Claude Code implementing chain-of-hypothesis research methodology, specialized tool agents, and modern attack vector development for ethical security research and bug bounty hunting.
 
@@ -12,9 +12,9 @@ HackBot Edition is a comprehensive offensive security framework for Claude Code 
 - Ensures responsible disclosure practices are maintained
 - Access limited to vetted security researchers with authorization
 
-## 🚀 Features
 
-### 🧠 Intelligence-Driven Research Chain
+
+###  Intelligence-Driven Research Chain
 - **Logical Framework**: Neutral context establishment
 - **Security Researcher**: Chain-of-hypothesis methodology with competing explanations
 - **Documentation Researcher**: Multi-source verification against public documentation
@@ -35,14 +35,14 @@ Each specialist has deep knowledge of tool flags, best practices, and offensive 
 - **gau-specialist**: Passive URL discovery from historical data
 - **openssl-specialist**: TLS/SSL testing and certificate analysis
 
-### 🎯 POC Research
+###  POC Research
 - **POC Parrot**: GitHub exploit retrieval with quality assessment
 
-### 🔧 Utilities
+###  Utilities
 - **/dox** command: Document findings in structured format
 - **block-echo** hook: Prevent test result fabrication
 
-## 📦 Installation
+##  Installation
 
 ### Prerequisites
 - Claude Code 1.0.60+ (native subagent support)
@@ -268,11 +268,11 @@ HackBot Edition integrates with CLAUDE.md methodology:
 - Multi-source verification protocol
 - Evidence hierarchy maintenance
 
-## 🔒 Safety & Ethics
+## Safety & Ethics
 
 ### Safe Harbor
 - All research is sanctioned under bug bounty programs
-- Defensive security focus (not malicious tooling)
+- Offensive security focus with end goal of eventual remediation of potential sec issues (not malicious tooling)
 - Human oversight at every stage
 - No automation without explicit user approval
 
@@ -332,19 +332,19 @@ model: sonnet
 
 [Specify License]
 
-## 🙏 Credits
+## Credits
 
 - Inspired by CLAUDE.md research methodology
 - Built on Claude Code native subagent framework
 - Community offensive security best practices
 
-## 📞 Support
+## Support
 
 - GitHub Issues: [Report bugs or request features]
 - Discord: [Community discussion]
 - Twitter: [@theedoode]
 
-## 🔗 Links
+##  Links
 
 - [Claude Code Documentation](https://docs.claude.com/claude-code)
 - [Plugin Marketplace Guide](https://docs.claude.com/claude-code/plugin-marketplace)
