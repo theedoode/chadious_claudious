@@ -1,0 +1,5 @@
+{
+  "event": "PreToolUse",
+  "command": "python3 ./hooks/block-echo.py",
+  "description": "Prevent fabrication of test results via echo command - CLAUDE.md PROVE IT methodology"
+}
