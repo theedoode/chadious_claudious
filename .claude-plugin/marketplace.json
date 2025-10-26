@@ -14,6 +14,7 @@
       "version": "1.0.0",
       "keywords": ["security", "research", "hypothesis", "intelligence", "exploitation", "attack-vectors", "recon", "tools", "offensive-security", "reconnaissance", "fuzzing", "cve", "poc", "exploits"],
       "category": "security",
+      "source": ".",
       "author": {
         "name": "theedoode",
         "email": "contact@example.com"
